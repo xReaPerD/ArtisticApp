@@ -10,15 +10,8 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [CupertinoColors.systemPink,Colors.pink.shade300],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-          ),
-          child: Center(
+        backgroundColor: const Color(0xFFE8A9A7),
+        body: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -26,7 +19,7 @@ class HomePage extends StatelessWidget {
                 const Text(
                   "Artistic",
                   style: TextStyle(
-                    color: Colors.white70,
+                    color: Colors.brown,
                     fontSize: 44,
                     fontWeight: FontWeight.w600,
                   ),
@@ -44,8 +37,8 @@ class HomePage extends StatelessWidget {
                         width: 260,
                         height: 55,
                         decoration: BoxDecoration(
-                          color: Colors.purple,
-                          border: Border.all(color: Colors.white70),
+                          color: Colors.blueAccent.shade100,
+                          border: Border.all(color: Colors.black87,width: 1),
                           borderRadius: BorderRadius.circular(20),
                           boxShadow: [
                             BoxShadow(
@@ -112,7 +105,6 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ),
-      ),
     );
   }
 }
