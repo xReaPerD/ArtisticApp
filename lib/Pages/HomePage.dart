@@ -16,13 +16,23 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 // Title
-                const Text(
-                  "Artistic",
-                  style: TextStyle(
-                    color: Colors.brown,
-                    fontSize: 44,
-                    fontWeight: FontWeight.w600,
-                  ),
+                const Column(
+                  children: [
+                    Text(
+                      "ᒍᑌᔕT◦ᗩᖇT",
+                      style: TextStyle(
+                        color: Colors.black87,
+                        fontSize: 44,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    SizedBox(height: 10,),
+                    Text("Just start with Just◦Art",style:
+                      TextStyle(
+                        color: Colors.black87,
+                        fontStyle: FontStyle.italic
+                      ),)
+                  ],
                 ),
 
                 Column(
@@ -52,9 +62,9 @@ class HomePage extends StatelessWidget {
                         child: const Align(
                           alignment: Alignment.center,
                           child: Text(
-                            "Login",
+                            "Create an Account",
                             style: TextStyle(
-                              color: Colors.white70,
+                              color: Colors.black87,
                               fontWeight: FontWeight.w600,
                               fontSize: 18,
                             ),
@@ -63,41 +73,27 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
 
-                    const SizedBox(height: 25,),
+                    const SizedBox(height: 20,),
 
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => const SignUpPage()));
-                      },
-                      child: Container(
-                        width: 260,
-                        height: 55,
-                        decoration: BoxDecoration(
-                          color: Colors.blueAccent.shade100,
-                          borderRadius: BorderRadius.circular(20),
-                          border: Border.all(color: CupertinoColors.darkBackgroundGray),
-                          boxShadow: [
-                            BoxShadow(
-                              color: CupertinoColors.darkBackgroundGray.withOpacity(0.4),
-                              blurRadius: 3,
-                              spreadRadius: 1,
-                              offset: const Offset(0, 3),
-                            )
-                          ],
-                        ),
-                        child: const Align(
-                          alignment: Alignment.center,
-                          child: Text(
-                            "Sign Up",
-                            style: TextStyle(
-                              color: CupertinoColors.darkBackgroundGray,
-                              fontWeight: FontWeight.w600,
-                              fontSize: 18,
-                            ),
-                          ),
-                        ),
-                      ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Text("Already have an account ? ",style:
+                          TextStyle(
+                            color: Colors.black87
+                          ),),
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => const SignUpPage()));
+                          },
+                          child: const Text("Sign in ",style:
+                          TextStyle(
+                              color: Colors.blueAccent,
+                              fontWeight: FontWeight.bold
+                          ),),
+                        )
+                      ],
                     )
                   ],
                 )
