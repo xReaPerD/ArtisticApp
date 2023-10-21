@@ -15,14 +15,20 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(const Duration(seconds: 3), ()=>
       Navigator.pushReplacement(context,
-          MaterialPageRoute(builder: (context) => HomePage())));
+          MaterialPageRoute(builder: (context) => const HomePage())));
   }
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: Color(0xFFE8A9A7),
         body: Center(
-          child: Text("Test"),
+          child: Text("ᒍᑌᔕT◦ᗩᖇT",style:
+            TextStyle(
+              color: Colors.black87,
+              fontSize: 44,
+              fontWeight: FontWeight.bold
+            ),),
         ),
     );
   }
