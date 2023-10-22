@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: const Color(0xFFE8A9A7),
+        backgroundColor: const Color(0xFFE8A9A7), //peachy pink
         body: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
