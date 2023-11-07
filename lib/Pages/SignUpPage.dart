@@ -12,9 +12,14 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text("SignUp Page"),
-        ),
+        backgroundColor: const Color(0xFFE8A9A7),
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+
+            ],
+          ),
+        )
       ),
     );
   }

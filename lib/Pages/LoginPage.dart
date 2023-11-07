@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:main_working_project/Pages/AddProfileImagePage.dart';
+import 'package:main_working_project/Pages/HomePage.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -155,6 +156,36 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                       ),
+                      const SizedBox(height: 40,),
+                      Padding(padding: EdgeInsets.only(left: 20),
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: GestureDetector(
+                          onTap: (){
+                            Navigator.push(context, 
+                                MaterialPageRoute(builder: (context) => const HomePage()));
+                          },
+                          child: Container(
+                            width: 50,
+                            height: 50,
+                            decoration: BoxDecoration(
+                              color: Colors.blueAccent.shade100,
+                              border: Border.all(color: Colors.black87,width: 1),
+                              borderRadius: BorderRadius.circular(20),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: CupertinoColors.darkBackgroundGray.withOpacity(0.3),
+                                  blurRadius: 3,
+                                  spreadRadius: 1,
+                                  offset: const Offset(0, 3),
+                                )
+                              ],
+                            ),
+                            child: const Icon(Icons.arrow_back),
+                          ),
+                        )
+                      ),
+                      )
                     ],
                   ),
                 )),
