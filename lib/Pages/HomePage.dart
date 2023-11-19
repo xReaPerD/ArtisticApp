@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:main_working_project/Pages/LoginPage.dart';
-import 'package:main_working_project/Pages/SignUpPage.dart';
+import 'package:main_working_project/Pages/SignInPage.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -85,7 +85,7 @@ class HomePage extends StatelessWidget {
                         GestureDetector(
                           onTap: (){
                             Navigator.push(context,
-                                MaterialPageRoute(builder: (context) => const SignUpPage()));
+                                MaterialPageRoute(builder: (context) => const SignInPage()));
                           },
                           child: const Text("Sign in ",style:
                           TextStyle(
