@@ -18,13 +18,13 @@ class _SignInPageState extends State<SignInPage> {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              const SizedBox(height: 60,),
+              const SizedBox(height: 100,),
               const Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(padding: EdgeInsets.only(left: 20),
                     child: Text("Welcome\nBack",style:
                     TextStyle(
-                        fontSize: 45,
+                        fontSize : 32,
                         color: Colors.black87,
                         fontWeight: FontWeight.w600
                     ),),
@@ -66,7 +66,7 @@ class _SignInPageState extends State<SignInPage> {
                     decoration: InputDecoration(
                         hintText:"Password",
                         border: InputBorder.none,
-                        icon: Icon(Icons.person)
+                        icon: Icon(Icons.lock)
                     ),
                   ),
                 ),
